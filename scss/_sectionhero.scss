@@ -1,0 +1,93 @@
+main{
+    width: 100%;
+    height: 100%;
+        .section_hero{
+            width: 100%;
+            display: flex;
+            padding: 6.6rem;
+            margin-bottom: 5rem;
+            z-index: 1;
+                .hero_text{
+                    h1{
+                        font-size: 4rem;
+                        color: $Very-Dark-Blue;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        color: $Grayish-Violet;
+                        width: 100%;
+                        max-width: 33rem;
+                        margin-bottom: 3rem;
+                    }
+                    .hero_btn{
+                        font-size: 1.1rem;
+                        width: 100%;
+                        max-width: 10.7rem;
+                        height: 3.5rem;
+                        background-color: $Cyan;
+                        color: white;
+                        border: none;
+                        border-radius: 2rem;
+                        cursor: pointer;
+                        transition: 0.4s;
+                            &:hover{
+                                transform: scale(1.02);
+                                opacity: 0.8;
+                            }
+                    }
+                }
+                .img_hero{
+                    img{
+                        width: 100%;
+                    }
+                }
+        }
+@media (max-width: 1000px) {
+    .section_hero{
+        height: 53rem;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3.6rem;
+            .hero_text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                    h1{
+                        width: 100%;
+                        max-width: 33rem;
+                        text-align: center;
+                        font-size: 3rem;
+                    }
+                    p{
+                        text-align: center;
+                        max-width: 23rem;
+                    }
+            }
+            .img_hero{
+                img{
+                    width: 100%;
+                    max-width: 36rem;
+                }
+            }
+    }
+}
+@media (max-width: 400px) {
+    .section_hero{
+        height: 40rem;
+        padding: 3.6rem 1.5rem;
+        .hero_text{
+            h1{
+                width: 100%;
+                max-width: 15rem;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                max-width: 23rem;
+            }
+        }
+    }
+}
+}
